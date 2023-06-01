@@ -48,7 +48,7 @@ const ButtonUserConfig = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(usuarioName)
       });
-      const data = await response.text();
+      //const data = await response.text();
       const isOk = response.ok;
       if (isOk) {
         console.log("Cambios realizados correctamente");
@@ -84,7 +84,7 @@ const ButtonUserConfig = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(usuarioEmail)
     });
-    const data = await response.text();
+    //const data = await response.text();
     const isOk = response.ok;
     if (isOk) {
       console.log("Cambios realizados correctamente");
@@ -120,7 +120,7 @@ const ButtonUserConfig = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(usuarioPassword)
     });
-    const data = await response.text();
+    //const data = await response.text();
     const isOk = response.ok;
     if (isOk) {
       console.log("Cambios realizados correctamente");

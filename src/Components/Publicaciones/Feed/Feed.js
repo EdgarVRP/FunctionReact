@@ -22,7 +22,7 @@ import CardActions from "@mui/material/CardActions";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import { red } from "@mui/material/colors";
+//import { red } from "@mui/material/colors";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ChatIcon from "@mui/icons-material/Chat";
 import Chip from "@mui/material/Chip";
@@ -143,7 +143,7 @@ const fechaFormateada = `${dia}/${mes}/${anio} a las ${hora}:${minuto}:${segundo
             />
           }
           action={
-            (usuarioActual == props.usuario.id) ?
+            (usuarioActual === props.usuario.id) ?
             <IconButton aria-label="settings"
             onClick={handleDelete}>
               <HighlightOffIcon />
