@@ -65,7 +65,7 @@ function Contact() { //La función Contact es el componente que contiene un form
 
         postContacto(newContacto)
             .then(() => {
-                setModalMessage('Contacto creado correctamente'); // Actualizamos el estado del mensaje modal
+                //setModalMessage('Contacto creado correctamente'); // Actualizamos el estado del mensaje modal
                 setOpen(true); // Abrimos la ventana modal
                 setTimeout(() => {
                     window.location.replace('');
